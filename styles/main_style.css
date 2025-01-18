@@ -1,0 +1,21 @@
+#sun {
+    -webkit-animation: spin 18s linear infinite;
+    -moz-animation: spin 18s linear infinite;
+    animation: spin 18s linear infinite;
+}
+
+#sun-bckg {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
