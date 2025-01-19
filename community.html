@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological Assistant</title>
+    <link rel="stylesheet" href="/styles/main_style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="./icons/icons8-mental-health-outline-16.png">
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="home-button">
+                <div class="home-button-text">Community</div>
+            </div>
+            <div class="account-buttons">
+                <div id="subscription-button"></div>
+                <div id="profie-button"></div>
+            </div>
+        </div>
+
+        <ul class="nav-bar">
+            <a href="/index.html">
+                <li>Today</li>
+            </a>
+            <a href="/calendar.html">
+                <li>Calendar</li>
+            </a>
+            <a href="/community.html">
+                <li>Community</li>
+            </a>
+            <a>
+                <li>Settings</li>
+            </a>
+        </ul>
+    </header>
+    <div id="community-page">
+        <div class="community-feed">
+            <ul class="user-comments">
+                <div class="feed-title">Community Feed:</div>
+                <li>
+                    <img src="./profilepics/vsnares.png" alt="vsnares" />
+                    <div class="text-comment">"Just completed my first week without social media! Feels amazing!"</div>
+                </li>
+                <li>
+                    <img src="./profilepics/alice.png" alt="alice" />
+                    <div class="text-comment">"Anyone up for a hike this weekend to disconnect? Let’s get out there!"
+                    </div>
+                </li>
+                <li>
+                    <img src="./profilepics/girl.png" alt="girl" />
+                    <div class="text-comment">"Struggling with temptation, but staying strong. Anyone else feeling the
+                        same?"</div>
+                </li>
+            </ul>
+        </div>
+        <a href="#popup-message">
+            <button class="button-post">
+                Post a Message
+            </button>
+        </a>
+
+        <div class="community-buddy">
+            <ul class="buddies">
+                <div class="feed-title">Buddies nearby:</div>
+                <li>
+                    <img src="./profilepics/pedro.png" alt="pedro" />
+                    <div class="buddies-text-box">
+                        <div>Pedro Pascal</div>
+                        <div>2.3km</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./profilepics/david.png" alt="david" />
+                    <div class="buddies-text-box">
+                        <div>David Carrad</div>
+                        <div>2.3km</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./profilepics/uma.png" alt="uma" />
+                    <div class="buddies-text-box">
+                        <div>Uma Thurma</div>
+                        <div>2.3km</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#popup-become-buddy"> <!-- Not done -->
+            <button class="button-post">Become Buddy</button>
+        </a>
+    </div>
+
+    <!-- Post a message pop-up -->
+    <div id="popup-message" class="popup">
+        <div class="popup-content">
+            <button class="close-pop-up" onclick="location.href='#';"></button>
+            <form action="/submit-message" method="post">
+                <h1>Tell your story</h1>
+                <input type="text" id="title" name="title" placeholder="Title..." required>
+
+                <textarea id="message" name="message" rows="6" placeholder="Message..." required></textarea>
+
+                <button type="submit">Post now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>
