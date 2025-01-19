@@ -1,192 +1,360 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    background: linear-gradient(to bottom,
-            #75c0ff,
-            #b8ebc9);
-    /* Gradient from top to bottom */
-    background-repeat: no-repeat;
-    overflow: hidden;
+html body {
+  height: 100%;
+  background: linear-gradient(to bottom, #75c0ff, #b8ebc9);
+  /* Gradient from top to bottom */
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 header {
-    margin: 1rem;
+  margin: 1rem;
+}
+
+footer {
+  padding-bottom: 2rem;
 }
 
 .top-bar {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
 }
 
 .home-button {
-    background-image: url("../icons/Cloud.png");
-    background-repeat: no-repeat;
-    width: 92px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  background-image: url("../icons/Cloud.png");
+  background-repeat: no-repeat;
+  width: 92px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
-
 .home-button-text {
-    margin: auto;
-    color: #ffc8a2;
+  margin: 18px auto;
+  color: #ffc8a2;
 
-    text-shadow: 0px 2px 1.1px rgba(0, 0, 0, 0.25);
-    font-family: "Simply Rounded";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  text-shadow: 0px 2px 1.1px rgba(0, 0, 0, 0.25);
+  font-family: "Simply_Rounded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#subscription-button {
+  width: 28px;
+  height: 46px;
+  background-image: url("../icons/LogoDefault.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#subscription-button:hover {
+  background-image: url("../icons/LogoHightlight.png");
+}
+
+#profie-button {
+  width: 28px;
+  height: 46px;
+  background-image: url("../icons/User.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#profie-button:hover {
+  background-image: url("../icons/UserHightlight.png");
 }
 
 .nav-bar {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: space-between;
-    padding-bottom: 8px;
-    padding-top: 8px;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
-.nav-bar>li {
-    color: #b9dfff;
-    text-align: center;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-    font-family: "Proxima Nova";
-    /*TODO: change*/
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -1.44px;
+.nav-bar > li {
+  color: #b9dfff;
+  text-align: center;
+  text-shadow: 0px 2px 2.8px rgba(0, 0, 0, 0.25);
+  font-family: "Proxima_Nova";
+  /*TODO: change*/
+  font-size: 18px;
+  letter-spacing: -1.44px;
+  width: 85px;
+  height: 26px;
+}
+
+.nav-bar > li:hover {
+  color: pink; /* TO CHANGE */
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fabf26;
+  width: 85px;
+  height: 26px;
+}
+
+.todos {
+  margin: 0;
+  padding: 0;
+}
+
+.box-list {
+  list-style-type: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+.box-list > li {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.box-list-element {
+  display: flex;
+  margin: 3px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #b8ebc9 0%, #aee1e3 71%, #a3d5ff 100%);
+  padding: auto;
+}
+
+.box-list img {
+  max-width: 120px;
+  height: auto;
+}
+
+.box-list-text-holder {
+  margin: 0.5rem;
+}
+
+.box-list-element-dialogue-title {
+  color: #fff;
+  text-shadow: 0px 2px 3.5px rgba(0, 0, 0, 0.25);
+  font-family: "Simply_Rounded";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.2rem;
+}
+
+.box-list-element-dialogue-subtitle {
+  color: #fff;
+  text-shadow: 0px 2px 3.5px rgba(0, 0, 0, 0.25);
+  font-family: "Simply_Rounded";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.1rem;
+}
+
+.box-list-element-dialogue-text {
+  color: #fff;
+  text-shadow: 0px 2px 3.5px rgba(0, 0, 0, 0.25);
+  font-family: "Simply_Rounded";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .animated-element {
-    position: relative;
-    display: inline-block;
-    justify-items: center;
-    justify-content: center;
+  position: relative;
+  display: inline-block;
+  justify-items: center;
+  justify-content: center;
 }
 
 .sun {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    max-width: 90vw;
-    max-height: 90vw;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  max-width: 90vw;
+  max-height: 90vw;
 }
 
 .absolute-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.3rem;
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    /* Putting text above everything else */
-    text-align: center;
-    pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  font-family: "Simply_Rounded";
 }
 
 .cloud-text {
-    position: absolute;
-    top: 43%;
-    left: 20%;
-    color: #a45b8a;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    font-family: "Simply Rounded";
-    font-size: 14px;
-    font-weight: bold;
-    white-space: nowrap;
-    z-index: 6;
+  position: absolute;
+  top: 43%;
+  left: 20%;
+  color: #a45b8a;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  font-family: "Simply_Rounded";
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 6;
 }
 
 #star {
-    -webkit-animation: reverse-spin 90s linear infinite;
-    -moz-animation: reverse-spin 90s linear infinite;
-    animation: reverse-spin 90s linear infinite;
+  -webkit-animation: reverse-spin 90s linear infinite;
+  -moz-animation: reverse-spin 90s linear infinite;
+  animation: reverse-spin 90s linear infinite;
 }
 
 #star-bckg {
-    -webkit-animation: spin 180s linear infinite;
-    -moz-animation: spin 180s linear infinite;
-    animation: spin 180s linear infinite;
+  -webkit-animation: spin 180s linear infinite;
+  -moz-animation: spin 180s linear infinite;
+  animation: spin 180s linear infinite;
 }
 
 #star,
 #star-bckg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #cloud-plus {
-    top: 10px;
-    position: absolute;
-    left: 4rem;
-    z-index: 5;
+  top: 10px;
+  position: absolute;
+  left: 4rem;
+  z-index: 5;
 }
 
 #cloud-challenge {
-    top: 0;
-    position: absolute;
-    left: 0;
-    z-index: 5;
+  top: 0;
+  position: absolute;
+  left: 0;
+  z-index: 5;
 }
 
 #cloud-seconds {
-    position: absolute;
-    top: 5rem;
-    right: 0;
-    z-index: 5;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 5;
+}
+
+.box-list > li:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
 }
 
 @-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @-moz-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes reverse-spin {
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
 }
 
 @-moz-keyframes reverse-spin {
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
 }
 
 @keyframes reverse-spin {
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: url("./fonts/proximanova_regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: url("./fonts/proximanova_bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: url("./fonts/proximanova_light.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: url("./fonts/proximanova_boldit.otf") format("opentype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Simply_Rounded";
+  src: url("./fonts/Simply_Rounded.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Simply_Rounded";
+  src: url("./fonts/Simply_Rounded_Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Simply_Rounded";
+  src: url("./fonts/Simply_Rounded_Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Simply_Rounded";
+  src: url("./fonts/Simply_Rounded_Bold_Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
 }
