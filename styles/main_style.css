@@ -50,6 +50,11 @@ h3 {
   line-height: normal;
 }
 
+.align-left {
+  text-align: left;
+  padding-left: 20px;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -322,6 +327,20 @@ h3 {
   animation: slide-up 0.5s ease-out;
 }
 
+.remove-decoration {
+  text-decoration: none;
+}
+
+#popup-challenge-2:target {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-up 0.5s ease-out;
+}
+
 .popup-content {
   width: 100%;
   text-align: center;
@@ -339,7 +358,7 @@ h3 {
   line-height: normal;
 }
 
-.popup-content > h1{
+.popup-content > h1 {
   font-size: 48px;
 }
 
@@ -615,6 +634,7 @@ h3 {
 
 .challenge-button:hover {
   background: #8cc9f5;
+  cursor: pointer;
 }
 
 .container_calendar,
@@ -631,6 +651,31 @@ h3 {
 .challenge-list {
   margin-left: auto;
   margin-right: auto;
+}
+
+.inactive:hover {
+  background-color: #767676 !important;
+}
+
+.active:hover {
+  background-color: #3d893f !important;
+}
+
+.selected:hover {
+  background-color: #4e8dc1 !important;
+}
+
+.day:hover {
+  background-color: #e3e3e3 !important;
+}
+
+.challenge-steps > li {
+  color: #fff;
+  text-shadow: 0px 2px 3.5px rgba(0, 0, 0, 0.25);
+  font-family: "Simply Rounded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {

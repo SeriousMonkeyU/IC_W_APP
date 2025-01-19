@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar Page</title>
-    <link rel="stylesheet" href="./styles/main_style.css" />
-  </head>
-  <body>
-    <div class="container_calendar">
-      <div class="calendar">
-        <div class="calendar_header">
-          <button class="calendar__header__prev">&#10094;</button>
-          <div class="calendar__header__month">January</div>
-          <div class="calendar__header__year">2016</div>
-          <button class="calendar__header__next">&#10095;</button>
-        </div>
-        <div class="calendar_days">
-          <div>Mo</div>
-          <div>Tu</div>
-          <div>We</div>
-          <div>Th</div>
-          <div>Fr</div>
-          <div>Sa</div>
-          <div>Su</div>
-        </div>
-        <div class="calendar_dates">
-          <div class="inactive">29</div>
-          <div class="inactive">30</div>
-          <div class="inactive">31</div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>
-          <div class="selected">13</div>
-          <div class="selected">14</div>
-          <div class="selected">15</div>
-          <div class="selected">16</div>
-          <div class="selected">17</div>
-          <div class="selected">18</div>
-          <div class="active">19</div>
-          <div class="selected">20</div>
-          <div class="selected">21</div>
-          <div class="selected">22</div>
-          <div class="selected">23</div>
-          <div class="selected">24</div>
-          <div class="selected">25</div>
-          <div class="inactive">1</div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar Page</title>
+  <link rel="stylesheet" href="./styles/main_style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="home-button">
+        <div class="home-button-text">Today</div>
       </div>
-    </div>
-    <div class="tasks">
-      <div class="progress-bar">
-        <div class="progress-fill">
-          <span class="progress-text">9/31</span>
-        </div>
+      <div class="account-buttons">
+        <div id="subscription-button"></div>
+        <div id="profie-button"></div>
       </div>
     </div>
 
-    <div class="challenge-list">
-      <p>Replace screen time with mindful moments.</p>
-      <p>Reconnect with nature, people, and yourself.</p>
-      <p>Discover the joy of simple, unplugged living.</p>
+    <ul class="nav-bar">
+      <li>Today</li>
+      <li>Calendar</li>
+      <li>Community</li>
+      <li>Settings</li>
+    </ul>
+  </header>
+  <div class="container_calendar">
+    <div class="calendar">
+      <div class="calendar_header">
+        <button class="calendar__header__prev">&#10094;</button>
+        <div class="calendar__header__month">January</div>
+        <div class="calendar__header__year">2016</div>
+        <button class="calendar__header__next">&#10095;</button>
+      </div>
+      <div class="calendar_days">
+        <div>Mo</div>
+        <div>Tu</div>
+        <div>We</div>
+        <div>Th</div>
+        <div>Fr</div>
+        <div>Sa</div>
+        <div>Su</div>
+      </div>
+      <div class="calendar_dates">
+        <div class="inactive">29</div>
+        <div class="inactive">30</div>
+        <div class="inactive">31</div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="selected">13</div>
+        <div class="selected">14</div>
+        <div class="selected">15</div>
+        <div class="selected">16</div>
+        <div class="selected">17</div>
+        <div class="selected">18</div>
+        <a class="remove-decoration" href="#popup-challenge-2">
+          <div class="active return">19</div>
+        </a>
+        <div class="selected">20</div>
+        <div class="selected">21</div>
+        <div class="selected">22</div>
+        <div class="selected">23</div>
+        <div class="selected">24</div>
+        <div class="selected">25</div>
+        <div class="inactive">1</div>
+      </div>
     </div>
+  </div>
+  <div class="tasks">
+    <div class="progress-bar">
+      <div class="progress-fill">
+        <span class="progress-text">9/31</span>
+      </div>
+    </div>
+  </div>
 
-    <h2 class="daily-challenges">Daily Challenges:</h2>
-    <div class="challenge-button">1. Go for a Walk Without Your Phone</div>
-    <div class="challenge-button">2. Create Something with Your Hands</div>
-    <div class="challenge-button">3. Watch the Sunrise or Sunset</div>
-  </body>
+  <div class="challenge-list">
+    <p>Replace screen time with mindful moments.</p>
+    <p>Reconnect with nature, people, and yourself.</p>
+    <p>Discover the joy of simple, unplugged living.</p>
+  </div>
+
+  <h2 class="daily-challenges">Daily Challenges:</h2>
+  <div class="challenge-button">1. Go for a Walk Without Your Phone</div>
+  <div class="challenge-button">2. Create Something with Your Hands</div>
+  <div class="challenge-button">3. Watch the Sunrise or Sunset</div>
+
+  <div id="popup-challenge-2" class="popup">
+    <div class="popup-content">
+      <button class="close-pop-up" onclick="location.href='#return';"></button>
+      <h1 class="pop-up-header">
+        Challenge:
+      </h1>
+      <div class="special-text">
+        Start a Conversation with Someone New
+      </div>
+      <h2 class="align-left">
+        Steps to Complete:
+      </h2>
+      <ol class="challenge-steps align-left">
+        <li>
+          Spot Someone New: Look around your day for someone you haven't met yet.
+        </li>
+        <li>Break the Ice: Start with a simple opener like, “Hi, how’s your day going?” or “I like your [item], where’s
+          it from?”
+        </li>
+        <li>
+          Be Curious: Ask an interesting question like, “What’s something fun you’ve done recently?” or “Where would
+          you go if you could travel anywhere?”
+        </li>
+        <li>
+          Share a Smile: End with a smile and a friendly farewell — small connections matter!
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+
 </html>
