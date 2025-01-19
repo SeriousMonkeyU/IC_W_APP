@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psychological Assistant</title>
-    <link rel="stylesheet" href="./styles/main_style.css">
-    <link type="image/png" sizes="16x16" rel="icon" href="./icons/icons8-mental-health-outline-16.png">
-  </head>
-  <body> 
-    <header></header>
-    <main>
-        <img id="sun" src="imgs/Sun1.png">
-        <img id="sun-bckg" src="imgs/Sun2.png">
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychological Assistant</title>
+  <link rel="stylesheet" href="./styles/main_style.css">
+  <link type="image/png" sizes="16x16" rel="icon" href="./icons/icons8-mental-health-outline-16.png">
+</head>
+
+<body>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="home-button">
+        <div class="home-button-text">Today</div>
+      </div>
+      <div class="account-buttons">
+        <div id="subscription-button"></div>
+        <div id="profie-button"></div>
+      </div>
+    </div>
+
+    <ul class="nav-bar">
+      <li>Today</li>
+      <li>Calendar</li>
+      <li>Community</li>
+      <li>Settings</li>
+    </ul>
+  </header>
+  <main>
+    <div class="animated-element">
+      <div class="clouds-stats">
+        <div id="cloud-challenge">
+          <img src="./icons/Cloud_2.png">
+          <div class="cloud-text">7 Challenges</div>
+          <img id="cloud-plus" src="./icons/Cloud_3.png">
+        </div>
+        <div id="cloud-seconds">
+          <img src="./icons/Cloud_3.png">
+          <div class="cloud-text">23 sec</div>
+        </div>
+      </div>
+      <div class="sun">
+        <img id="star-bckg" src="./icons/Star_2.png" alt="Background Star">
+        <img id="star" src="./icons/Star_1.png" alt="Foreground Star">
+        <div class="absolute-text">Total:<br>9 days 12 hours</div>
+      </div>
+    </div>
+
+    <!-- To Do's -->
+    <div class="todos">
+      <ul class="box-list">
+        <li>
+          <div class="box-list-element">
+            <img src="./icons/mpcp-walking-320x240-1 1.png" alt="Hiking Image">
+            <div class="box-list-text-holder">
+              <div class="box-list-element-dialogue-title">Challenge #8</div>
+              <div class="box-list-element-dialogue-subtitle">Go hiking!</div>
+              <div class="box-list-element-dialogue-text">Explore places you never visited!</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="box-list-element">
+            <img src="./icons/shutterstock_658555783 1.png" alt="Two Friends">
+            <div class="box-list-text-holder">
+              <div class="box-list-element-dialogue-subtitle">
+                Connecting with other is the antidote to isolation - every shared
+                moment brings
+                light to the shadows of
+                loneliness.
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
