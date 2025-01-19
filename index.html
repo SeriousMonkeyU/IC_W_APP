@@ -53,30 +53,60 @@
     <div class="todos">
       <ul class="box-list">
         <li>
-          <div class="box-list-element">
-            <img src="./icons/mpcp-walking-320x240-1 1.png" alt="Hiking Image">
-            <div class="box-list-text-holder">
-              <div class="box-list-element-dialogue-title">Challenge #8</div>
-              <div class="box-list-element-dialogue-subtitle">Go hiking!</div>
-              <div class="box-list-element-dialogue-text">Explore places you never visited!</div>
+          <a href="#popup-hiking">
+            <div class="box-list-element">
+              <img src="./icons/mpcp-walking-320x240-1 1.png" alt="Hiking Image">
+              <div class="box-list-text-holder">
+                <h1>Challenge #8</h1>
+                <h2>CLICK ME!!!!!!</h2>
+                <h3>Explore places you never visited!</h3>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
           <div class="box-list-element">
             <img src="./icons/shutterstock_658555783 1.png" alt="Two Friends">
             <div class="box-list-text-holder">
-              <div class="box-list-element-dialogue-subtitle">
+              <h2>
                 Connecting with other is the antidote to isolation - every shared
                 moment brings
                 light to the shadows of
                 loneliness.
-              </div>
+              </h2>
             </div>
           </div>
         </li>
       </ul>
     </div>
+
+    <!-- Challenges Pop-up -->
+    <div id="popup-hiking" class="popup">
+      <div class="popup-content">
+        <button class="close-pop-up" onclick="location.href='#';"></button>
+        <h1 class="pop-up-header">
+          Go hiking!
+        </h1>
+        <h2 class="pop-up-text">
+          Step outside and explore! Discover a new trail, park, or forest. Disconnect from screens, breathe fresh air,
+          and enjoy the sounds of nature as you hike through unfamiliar terrain.
+        </h2>
+        <h2 class="pop-up-text">
+          Challenge Goal:
+        </h2>
+        <div class="special-text">
+          Duration: Hike for at least 2 hours or cover 5 kilometers.
+        </div>
+        <h2 class="pop-up-text">
+          Objective:
+        </h2>
+        <div class="special-text">
+          Visit a trail or outdoor location you've never been to before. Share a photo or a short journal entry about
+          the experience in the app.
+        </div>
+      </div>
+    </div>
+
   </main>
   <footer></footer>
 </body>
